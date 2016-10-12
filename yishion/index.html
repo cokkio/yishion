@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>以纯首页</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<script src="jquery/jquery.js"></script>
+	<script src="jquery/index.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+		
+</head>
+<body>
+	<!--top================================头部连接到首页==============-->
+	<div class="top">
+		<a href="#">
+		</a>
+	</div>
+	<!-- nav-nav导航===============================top-nav导航============== -->
+	<div class="top-nav_wrap">
+		<div id="top-nav">
+			<!-- ===============左侧====================== -->
+			<div id="leftnav" class="left">
+				<ul>
+					<li><a href="#" class="red">返回首页</a></li>
+					<li><a href="#">收藏本站</a></li>
+					<!-- =======================购物车================================ -->
+					<li><a href="html/cart.html">查看购物车</a></li>
+					<li><a href="#">用户中心</a></li>
+					<li><a href="#">留言板</a></li>
+					<li><a href="#">会员俱乐部</a></li>
+				</ul>
+			</div>
+			<!-- ====================右侧=========================================== -->
+			<div id="rightnav" class="right">
+				<ul>
+					<li>您好，欢迎光临本店！</li>
+					<!--================= 点击进入登录页面=login============================ -->
+					<!-- <li><a href="html/login.html" class="red">登录</a></li> -->
+					<!--==================点击进入注册界面=register.html===========================-->
+					<!-- <li><a href="html/register.html">注册</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--=====================top-search搜索框========================================-->
+	<div id="top-search">
+		<div class="logoimg left">
+			<a href="#"><img src="images/logo/logo.gif" alt="logo" /></a>
+		</div>
+	<!--================================搜索框 =============-->
+		<div id="searchbox" class="left">
+			<input type="text" class="w373 left" placeholder="针织衫" id="txt"/>
+			<img src="images/top-search/search_btn1.png" alt="搜索" class="seek"/>
+			<ul id="list-search">
+				<li>
+					<a href=""></a>
+				</li>
+			</ul>
+			<ul>
+				<li class="red">热门搜索：</li>
+				<li><a href="#">打底衫</a></li>
+				<li><a href="#">开衫</a></li>
+				<li><a href="#">衬衫</a></li>
+				<li><a href="#">连衣裙</a></li>
+				<li><a href="#">小娇女仔裤</a></li>
+				<li><a href="#">女鞋</a></li>
+				<li><a href="#">配饰</a></li>
+			</ul>
+		</div>
+
+
+
+		<!--=============== 购物车 ==============-->
+		<div id="cartbox" class="left">
+			<a href="html/cart.html" id="price-box">购物车<span class="red">0</span></a>
+		</div>
+	</div>
+
+
+	
+	<!--=========================================== 真正的导航nav============================ -->
+	<div id="nav_wrap">
+		<div id="nav">
+			<ul id="nav-tab">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">时尚女装</a>
+					<ul class="hot-data">
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">裙子</a></li>
+						<li><a href="#">全智贤同款</a></li>
+						<li><a href="#">外套</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">线衫</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入时尚女装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">精品男装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">外套</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">商务休闲</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">韩庚推荐款</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<li><a href="#">线衫</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">休闲鞋</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">更多单品</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入更多单品首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">男童</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入男童首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">可爱童装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">男童</a></li>
+						<li><a href="#">女童</a></li>
+						<li><a href="#">轻薄羽绒</a></li>
+						<li><a href="#">圣诞系列</a></li>
+						<li><a href="#">更多单品</a></li>
+						<li><a href="#">可爱童鞋</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="index.html">进入可爱童装首页>></a></h3>
+					</ul>
+						
+				</li>
+				<li>
+					<a href="#">折扣专区</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ==========================轮播图banner=========================================== -->
+	<div id="bannerbig">
+		<ul id="banner-img">
+
+		</ul>
+		<div id="banner-nav">
+			
+		</div>
+		<div id="pre" class="btnp">&lt;</div>
+		<div id="next" class="btnp">&gt;</div>
+	</div>
+	<!-- =============================热销展品展示================================== -->
+	<div id="productlist">
+		<ul>
+			<!-- <li><a href=""><img src="images/productlist/img1.jpg" alt="产品一" /></a></li>
+			<li><a href=""><img src="images/productlist/img2.jpg" alt="产品二" /></a></li>
+			<li><a href=""><img src="images/productlist/img3.jpg" alt="产品三" /></a></li>
+			<li><a href=""><img src="images/productlist/img4.jpg" alt="产品四" /></a></li>
+			<li><a href=""><img src="images/productlist/img5.jpg" alt="产品五" /></a></li>
+			<li><a href=""><img src="images/productlist/img6.jpg" alt="产品六" /></a></li> -->
+		</ul>
+	</div>
+	<!-- ========================女装专场ladylist ========================-->
+	<div id="ladylist">
+		<!--=================== 女士专场上半部分ladylist1 =========================-->
+		<div id="ladylist1">
+			<div class="ladylistleft left">
+				<ul id="ladytab">
+					<li><a href="html/list.html"><img src="images/ladylist/tshirts.png" class="left">长袖T恤<span>T-shirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/ladylist/sweats.jpg" class="left">毛衣针织衫<span>Sweaters</span></a></li>
+					<li><a href="html/list.html"><img src="images/ladylist/overshirts.jpg" class="left">衬衫<span>Overshirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/ladylist/dresses.jpg" class="left">裙装<span>Dresses</span></a></li>
+					<li><a href="html/list.html"><img src="images/ladylist/pants.jpg" class="left">裤装<span>Pants</span></a></li>
+					<li><a  class="bb0" href="html/list.html"><img src="images/ladylist/shoes.jpg" class="left">鞋子<span>Shoes</span></a></li>
+				</ul>
+			</div>
+			<div class="ladylistright right">
+				<h3>
+					<span>时尚女装</span>
+					<ul class="right">
+						<li><a href="html/list.html">卫衣</a></li>
+						<li><a href="html/list.html">T恤</a></li>
+						<li><a href="html/list.html">裤子</a></li>
+						<li><a href="html/list.html">裙子</a></li>
+						<li><a href="html/list.html">全智贤同款</a></li>
+						<li><a href="html/list.html">FR3E系列</a></li>
+						<li><a href="html/list.html">衬衫</a></li>
+						<li class="br0"><a href="list.html">更多>></a></li>
+					</ul>
+				</h3>
+				<!-- ===========================第二个轮播图ladyscroll============ -->
+				<div class="lady-scroll left">
+					<ul id="ladyscroll">
+						
+					</ul>
+					<div id="lady-nav">
+						
+					</div>
+				</div>
+				<!-- ==========================不用json数据的图 ===================-->
+				<div id="ladyrright" class="left">
+					<ul>
+						<!-- <li><a href="#"><img src="images/ladylist/rrimg1.jpg" /></a></li>
+						<li><a href="#"><img src="images/ladylist/rrimg2.jpg" /></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--========================= 女士专场服装展示ladylist2=============== -->
+		<div id="ladylist2">
+			<ul>
+				<!-- <li>
+					<a href="">
+						<img src="images/ladylist/ladyshow1.jpg" alt="">
+					</a>
+					<p>￥559元</p> -->
+					<!-- ======详情详情详情详情============= -->
+					<!-- <a href="">
+						<p>女装呢料长装夹层外套</p>
+						<p class="red">立即购买▶</p>
+					</a>
+				</li>
+				<li><a href=""><img src="images/ladylist/ladyshow2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow5.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow6.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow7.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow8.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow9.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/ladylist/ladyshow10.jpg" alt=""></a></li> -->
+			</ul>
+		</div>
+	</div>
+	<!-- ===========================男装专场manlist=========================== -->
+	<div id="manlist">
+		<!--=================== 男士专场上半部分manlist1 =========================-->
+		<div id="manlist1">
+			<div class="left manlistleft">
+				<ul id="mantab">
+					<li><a href="html/list.html"><img src="images/manlist/list1.jpg" >长袖T恤<span>T-shirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/manlist/list2.jpg" >针织衫<span>Sweaters</span></a></li>
+					<li><a href="html/list.html"><img src="images/manlist/list3.jpg" >衬衫<span>Shirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/manlist/list4.jpg" >牛仔裤<span>Jeans</span></a></li>
+					<li><a href="html/list.html"><img src="images/manlist/list5.jpg" >休闲裤<span>Pants</span></a></li>
+					<li><a  class="bb0" href="html/list.html"><img src="images/manlist/list6.jpg" >男鞋<span>Shoes</span></a></li>
+				</ul>
+			</div>
+			<div class="right manlistright">
+				<h3>
+					<span>精品男装</span>
+					<ul class="right">
+						<li><a href="html/list.html">外套</a></li>
+						<li><a href="html/list.html">休闲商务</a></li>
+						<li><a href="html/list.html">外套FR3E</a></li>
+						<li><a href="html/list.html">韩庚推荐款</a></li>
+						<li><a href="html/list.html">线衫</a></li>
+						<li class="br0"><a href="html/list.html">更多>></a></li>
+					</ul>
+				</h3>
+				<!-- ===========================只有一张图没有轮播图============ -->
+				<div class="manimg left">
+					<a href="#"><img src="images/manlist/img1.jpg" alt="" /></a>
+				</div>
+				<!-- ==========================要用json数据的图 ===================-->
+				<div id="manrright" class="left">
+					<ul>
+					<!-- 	<li><a href="#"><img src="images/manlist/manrr1.jpg" /></a></li>
+						<li><a href="#"><img src="images/manlist/manrr2.jpg" /></a></li>
+						<li><a href="#"><img src="images/manlist/manrr3.jpg" /></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--========================= 男士专场服装展示manlist2=============== -->
+		<div id="manlist2">
+			<ul>
+				<!-- <li>
+					<a href="">
+						<img src="images/manlist/manshow1.jpg" alt="">
+					</a> -->
+					<!-- ======详情详情详情详情============= -->
+					<!-- <p>
+						<a href="#">男款羽绒服</a>
+						<span>￥198</span>
+					</p>
+				</li>
+				<li><a href=""><img src="images/manlist/manshow2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/manlist/manshow3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/manlist/manshow4.jpg" alt=""></a></li> -->
+			</ul>
+		</div>
+	</div>
+	<!--============== 可爱童装childlist====================可爱童装====================================== -->
+	<div id="childlist">
+		<!--=================== 可爱童装上半部分childlist1 =========================-->
+		<div id="childlist1">
+			<div class="left childlistleft">
+				<ul id="childtab">
+					<li><a href="html/list.html"><img src="images/childlist/list1.jpg">T恤<span>T-shirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/childlist/list2.jpg">针织衫<span>knitwear</span></a></li>
+					<li><a href="html/list.html"><img src="images/childlist/list3.jpg">套装<span>Suit</span></a></li>
+					<li><a href="html/list.html"><img src="images/childlist/list4.jpg">裙装<span>Dress</span></a></li>
+					<li><a href="html/list.html"><img src="images/childlist/list5.jpg">裤装<span>Pants</span></a></li>
+					<li><a  class="bb0" href="html/list.html"><img src="images/childlist/list6.jpg">配饰<span>Accessories</span></a></li>
+				</ul>
+			</div>
+			<div class="right childlistright">
+				<h3>
+					<span>可爱童装</span>
+					<ul class="right">
+						<li><a href="html/list.html">男童</a></li>
+						<li><a href="html/list.html">女童</a></li>
+						<li><a href="html/list.html">轻薄羽绒</a></li>
+						<li><a href="html/list.html">圣诞系列</a></li>
+						<li class="br0"><a href="html/list.html">更多>></a></li>
+					</ul>
+				</h3>
+				<!-- ===========================只有一张图没有轮播图============ -->
+				<div class="childimg left">
+					<a href="#"><img src="images/childlist/child1.jpg" alt="" /></a>
+				</div>
+				<!-- ==========================用json数据的图 ===================-->
+				<div id="childrright" class="left">
+					<ul>
+						<!-- <li><a href="#"><img src="images/childlist/childrr1.jpg" /></a></li>
+						<li><a href="#"><img src="images/childlist/childrr2.jpg" /></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--========================= 童装专场服装展示childlist2=============== -->
+		<div id="childlist2">
+			<ul>
+				<!-- <li>
+					<a href="">
+						<img src="images/childlist/childshow1.jpg" alt="">
+					</a>
+				
+					<p>
+						<span class="sl left">原价<em>￥455元</em></span>
+						<span class="sr right">热销价<strong>￥198</strong></span>
+					</p>
+				</li>
+				<li>
+					<a href=""><img src="images/childlist/childshow2.jpg" alt=""></a>
+					
+					<p>
+						<span class="sl left">原价<em>￥455元</em></span>
+						<span class="sr right">热销价<strong>￥198</strong></span>
+					</p>
+				</li>
+				<li>
+					<a href=""><img src="images/childlist/childshow3.jpg" alt=""></a>
+					
+					<p>
+						<span class="sl left">原价<em>￥455元</em></span>
+						<span class="sr right">热销价<strong>￥198</strong></span>
+					</p>
+				</li>
+				<li>
+					<a href=""><img src="images/childlist/childshow4.jpg" alt=""></a>
+				
+					<p>
+						<span class="sl left">原价<em>￥455元</em></span>
+						<span class="sr right">热销价<strong>￥198</strong></span>
+					</p>
+				</li>
+				<li>
+					<a href=""><img src="images/childlist/childshow5.jpg" alt=""></a>
+				
+					<p>
+						<span class="sl left">原价<em>￥455元</em></span>
+						<span class="sr right">热销价<strong>￥198</strong></span>
+					</p>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+<!-- =========================以纯标志分割童装专场和陪衬======== -->
+	<div id="yishion">
+	<!-- 	<a href="#"><img src="images/yishion.jpg" alt="以纯标志" /></a> -->
+	</div>
+<!--=================== 配衬secondary================================== -->
+	<div id="secondary">
+		<div id="secondary1">
+		<!-- ====================================上半部分============================ -->
+			<div class="secondaryleft left">
+				<ul id="secondarytab">
+					<li><a href="html/list.html"><img src="images/secondary/list1.jpg">长袖T恤<span>T-shirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/secondary/list2.jpg">雪纺衫<span>Sweaters</span></a></li>
+					<li><a href="html/list.html"><img src="images/secondary/list3.jpg">衬衫<span>Overshirts</span></a></li>
+					<li><a href="html/list.html"><img src="images/secondary/list4.jpg">裙装<span>Dresses</span></a></li>
+					<li><a href="html/list.html"><img src="images/secondary/list5.jpg">裤装<span>Pants</span></a></li>
+					<li><a  class="bb0" href="html/list.html"><img src="images/secondary/list6.jpg">鞋子<span>Shoes</span></a></li>
+				</ul>
+			</div>
+			<div class="secondaryright right">
+				<h3>
+					<span>配衬</span>
+					<ul class="right">
+						<li><a href="html/list.html">休闲鞋</a></li>
+						<li><a href="html/list.html">家居服</a></li>
+						<li><a href="html/list.html">潮流包</a></li>
+						<li class="br0"><a href="html/list.html">更多>></a></li>
+					</ul>
+				</h3>
+				<!-- ===========================只有一张图没有轮播图============ -->
+				<div class="secondaryimg left">
+					<a href="#"><img src="images/secondary/showimg.jpg" alt="" /></a>
+				</div>
+				<!-- ==========================用json数据的图 ===================-->
+				<div id="secondaryrright" class="left">
+					<ul>
+						<!-- <li><a href="#"><img src="images/ladylist/rrimg1.jpg" /></a></li>
+						<li><a href="#"><img src="images/ladylist/rrimg2.jpg" /></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- ============================第二部分======================== -->
+		<div id="secondary2">
+			<ul>
+				<!-- <li>
+					<a href="">
+						<img src="images/secondary/show1.jpg" alt="">
+					</a>
+					<p>￥99元</p>
+					
+					<a href="">
+						<p>围巾</p>
+						<p class="red">立即购买▶</p>
+					</a>
+				</li>
+				<li><a href=""><img src="images/secondary/show2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/secondary/show3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/secondary/show4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/secondary/show5.jpg" alt=""></a></li> -->
+			</ul>
+		</div>	
+	</div>
+<!--===================新闻中心====================== -->
+	<div id="news">
+		<div id="newsleft" class="left">
+			<h3>新闻中心</h3>
+			<ul id="newslist1">
+				<!-- <li><a href=""><img src="images/news/img1.jpg" /></a></li>
+				<li><a href=""><img src="images/news/img2.jpg" /></a></li>
+				<li><a href=""><img src="images/news/img3.jpg" /></a></li>
+				<li><a href=""><img src="images/news/img4.jpg" /></a></li> -->
+			</ul>
+				
+		</div>
+		<div id="newsright" class="right">
+			<h3>精彩活动</h3>
+			<ul id="newslist">
+				<!-- <li><a href=""><img src="images/news/newsr1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/news/newsr2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/news/newsr3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/news/newsr4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/news/newsr5.jpg" alt=""></a></li> -->
+			</ul>
+		</div>
+	</div>
+<!-- ===========================综合信息============================== -->
+	<div id="information">
+		<div>
+			<h2>新手上路</h2>
+			<ul>
+			<li><a href="">怎样下订单</a></li>
+			<li><a href="">会员等级制度</a></li>
+			<li><a href="">积分制度</a></li>
+			<li><a href="">优惠券制度</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于订购</h2>
+			<ul>
+			<li><a href="">网上支付</a></li>
+			<li><a href="">邮局汇款</a></li>
+			<li><a href="">银行汇款</a></li>
+			<li><a href="">货到付款</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于配送</h2>
+			<ul>
+			<li><a href="">配送时间</a></li>
+			<li><a href="">配送费用</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>帮助中心</h2>
+			<ul>
+			<li><a href="">找回密码</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">公告栏</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>售后服务</h2>
+			<ul>
+			<li><a href="">退换货政策</a></li>
+			<li><a href="">退换货申请</a></li>
+			<li><a href="">1:1留言答复</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于我们</h2>
+			<ul>
+			<li><a href="">公司简介</a></li>
+			<li><a href="">招聘英才</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>联系合作</h2>
+			<ul>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">友情链接</a></li>
+			<li><a href="">实体批发</a></li>
+		</ul>
+		</div>
+	</div>
+	<!-- ===================================分割线黑色的=========================-->
+	<div id="black">
+		
+	</div>
+	<!-- ======================================copy底部========================== -->
+	<div id="copy">
+		<p>&copy;2005-2016 YISHION以纯-官方网站 版权所有，并保留多有权利。</p>
+		<p>技术支持：<span>伍佰亿</span></p>
+		<img src="images/copy/paidai.png" alt="" />
+	</div>
+	<!-- ========================返回顶部按钮================================-->
+	<div id="returntop">
+		<a href="#top">返回顶部</a>
+	</div>
+</body>
+</html>

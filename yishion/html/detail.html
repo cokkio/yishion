@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" href="../css/index.css" />
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/detail.css" />
+	<script src="../jquery/jquery.js"></script>
+	<script src="../jquery/detail.js"></script>
+	<script src="../jquery/cart.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+	<!-- nav-nav导航===============================top-nav导航============== -->
+	<div class="top-nav_wrap">
+		<div id="top-nav">
+			<!-- ===============左侧====================== -->
+			<div id="leftnav" class="left">
+				<ul>
+					<li><a href="../index.html" class="red">返回首页</a></li>
+					<li><a href="#">收藏本站</a></li>
+					<!-- =======================购物车================================ -->
+					<li><a href="cart.html">查看购物车</a></li>
+					<li><a href="#">用户中心</a></li>
+					<li><a href="#">留言板</a></li>
+					<li><a href="#">会员俱乐部</a></li>
+				</ul>
+			</div>
+			<!-- ====================右侧=========================================== -->
+			<div id="rightnav" class="right">
+				<ul>
+					<li>您好，欢迎光临本店！</li>
+					<!--================= 点击进入登录页面=login============================ -->
+					<!-- <li><a href="login.html" class="red">登录</a></li> -->
+					<!--==================点击进入注册界面=register.html===========================-->
+					<!-- <li><a href="register.html">注册</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--=====================top-search搜索框========================================-->
+	<div id="top-search">
+		<div class="logoimg left">
+			<a href="#"><img src="../images/logo/logo.gif" alt="logo" /></a>
+		</div>
+	<!--================================搜索框 =============-->
+		<div id="searchbox" class="left">
+			<input type="text" class="w373 left" placeholder="针织衫" id="txt"/>
+			<img src="../images/top-search/search_btn1.png" alt="搜索" />
+			<ul id="list-search">
+				<li>
+					<a href=""></a>
+				</li>
+			</ul>
+			<ul>
+				<li class="red">热门搜索：</li>
+				<li><a href="#">打底衫</a></li>
+				<li><a href="#">开衫</a></li>
+				<li><a href="#">衬衫</a></li>
+				<li><a href="#">连衣裙</a></li>
+				<li><a href="#">小娇女仔裤</a></li>
+				<li><a href="#">女鞋</a></li>
+				<li><a href="#">配饰</a></li>
+			</ul>
+		</div>
+		<!--=============== 购物车 ==============-->
+		<div id="cartbox" class="left">
+			<a href="cart.html" id="price-box">购物车<span class="red">0</span></a>
+		</div>
+	</div>
+	<!--=========================================== 真正的导航nav============================ -->
+	<div id="nav_wrap">
+		<div id="nav">
+			<ul id="nav-tab">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">时尚女装</a>
+					<ul class="hot-data">
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">裙子</a></li>
+						<li><a href="#">全智贤同款</a></li>
+						<li><a href="#">外套</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">线衫</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入时尚女装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">精品男装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">外套</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">商务休闲</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">韩庚推荐款</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<li><a href="#">线衫</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">休闲鞋</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">更多单品</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入更多单品首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">男童</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入男童首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">可爱童装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">男童</a></li>
+						<li><a href="#">女童</a></li>
+						<li><a href="#">轻薄羽绒</a></li>
+						<li><a href="#">圣诞系列</a></li>
+						<li><a href="#">更多单品</a></li>
+						<li><a href="#">可爱童鞋</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入可爱童装首页>></a></h3>
+					</ul>
+						
+				</li>
+				<li>
+					<a href="#">折扣专区</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ==============================详情信息=====================================================================详情信息 -->
+	<div id="detailbox">
+		<p class="h66">LOCATIONG:<a href="../index.html">首页</a> > <a href="#">时尚女装</a> > <a href="#">全智贤同款</a> > 女装中长呢料夹层外套</p>
+		<div id="detailbox-left" class="left">
+			<h3>热门分类</h3>
+			<ul>
+				<li><a href="list.html">卫衣</a></li>
+				<li><a href="list.html">T恤</a></li>
+				<li><a href="list.html">裤子</a></li>
+				<li><a href="list.html">裙子</a></li>
+				<li><a href="list.html">全智贤同款</a></li>
+				<li><a href="list.html">外套</a></li>
+				<li><a href="list.html">FR3E系列</a></li>
+				<li><a href="list.html">衬衫</a></li>
+				<li><a href="list.html">线衫</a></li>
+				<li><a href="list.html">夏装</a></li>
+			</ul>
+		</div>
+		<div id="detailbox-right" class="right">
+			<div id="detail">
+				<div id="detail-left" class="left">
+<!-- ========================放大镜效果=========================== -->
+					<div id="glass">
+						<div class="glass-main">
+							<a href="#" id="bigimg"><!-- <img src="images/detail/glass2.jpg" /> --></a>
+							<!--360度全景展示放大镜-->
+							<div id="imgshow"></div>
+						</div>
+						<div id="glass-show">
+							<!-- <img src="images/detail/glass2.jpg" /> -->
+						</div>
+					</div>
+<!-- ============================放大镜结束========================= -->
+					<div class="like-share">
+						<div class="bdsharebuttonbox mt15"><a href="#" class="bds_more" data-cmd="more"></a><span>分享到：</span><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+						<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+					</div>
+				</div>
+				<div id="detail-right" class="right">
+					<div class="news">
+						<!-- <h4>女装中长呢料夹层外套</h4> -->
+						<h1 class="tt1">商品货号：ECS000038<span>售价 ：<em>￥959元</em></span></h1>
+
+
+						<h1 class="tt2">
+							促销价：
+							<span class="sell">￥<!-- <em>799</em> --></span>
+							<i>8.3折</i>
+							<a href="##" id="vipshow">
+								会员专享价
+								<img src="../images/detail/d.png">
+								<div id="vip">
+									<p>升级成为普通会员：您只需要成功交易一笔订单，就可以享受正价商品9.8折优惠</p>
+									<p>升级成为黄金会员：您只需要消费500元，就可以享受正价商品9.5折优惠</p>
+									<p>升级成为白金会员：您只需要消费2000元，就可以享受正价商品8.5折优惠</p>
+									<p>升级成为钻石会员：您只需要消费5000元，就可以享受正价商品8折优惠</p>
+								</div>
+							</a>
+						</h1>
+						<h1>销量：1092件</p>
+						<h1>用户评分：<span class="grade-stars"><img src="../images/detail/stars5.gif"></span> （共有<b class="count">0</b>条评论）</h1>
+					</div>
+					<!-- =============================================================================================购买或者加入购物车================================================================ -->
+
+					<div id="purchase">
+						<p>数量：<a href="##" class="add">+</a><em>0</em><a href="##" class="reduce">-</a><b>商品总价：</b> 库存：<i>100</i>件</p>
+						<a href="#3" class="detail-buy" title="立即购买"></a>
+						<a href="##" title="加入购物车" id="addcart"></a>
+					</div>
+
+					<!-- 购买或者加入购物车结束============================================================================================================================================= -->
+					<div id="more">
+						<a href=""><span>在线客服：</span><img src="../images/detail/qq.jpg"></a>
+						<a href="" class="rr1"><span>官方微信：</span><img src="../images/detail/weixin.png"><img src="../images/detail/sys.gif" class="dingwei"></a>
+						<a href="" class="red1"><span class="phone">手机下单更优惠<img src="../images/detail/code.jpg" class="code"><img src="../images/detail/client_code.jpg" class="phone1"></span> </a>
+
+						<a href="#">支付方式：支付宝 网上银行付款</a>
+						<a href="#">服务承诺：<img src="../images/detail/service.png"></a>
+					</div>
+				</div>
+			</div>
+			<!-- ==============================选项卡部分=================================== -->
+			<div id="tab">
+				<div id="tab1">
+					<ul>
+					<li class="cur">
+						<a href="##">商品详情</a>
+					</li>
+					<li><a href="##">商品评价</a></li>
+					<li><a href="##">尺码对照</a></li>
+					<li><a href="##">常见问题</a></li>
+					</ul>
+				</div>
+				<!-- ==========================商品详情=========================== -->
+				<div id="choose">
+					<div class="proinfo" id="box0">
+						<p class="wit1"><span>品牌：以纯</span>货号：ECS000038</p>
+						<h5>有点复古，有点怀旧的英伦风格子外套，简单版型却个性鲜明，无论T台还是街头都能赚足眼球</h5>
+						<table>
+							<tr>
+								<th>名称</th>
+								<th>款号</th>
+								<th>颜色选择</th>
+								<th>尺码选择</th>
+							</tr>
+							<tr>
+								<td>女装中长呢料夹层外套</td>
+								<td>1542114096YH</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>女装高领长袖线衫</td>
+								<td>1542217716YH</td>
+								<td>枣红，土黄，黑色</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>女装重要弹力梭织贴身小脚长裤</td>
+								<td>1542040017YJ</td>
+								<td>米白</td>
+								<td></td>
+							</tr>
+						</table>
+						<h6>如果您发现任何问题，欢迎<a href="#">提点建议</a></h6>
+					</div>
+					<!--============ 商品评价=================== -->
+					<div class="assessbox" id="box1">
+						<div id="user-assess">
+							<ul>
+								<li class="q1">暂时还没有任何用户评论</li>
+							</ul>
+						</div>
+						<p class="m15">共<em>0</em>条评论<a href="##" id="perpage">上一页</a><a href="##" id="nextpage">下一页</a></p>
+						<div id="assess">
+							<form>
+								<p><span>用户名：</span>匿名用户</p>
+								<p><span>E-mail：</span><input type="text" class="e-mail"/></p>
+								<p class="grade">
+									<span>评价等级：</span>
+									<em><input type="radio" name="rel" checked="checked"/><img src="../images/detail/stars5.gif" /></em>
+									<em><input type="radio" name="rel" /><img src="../images/detail/stars4.gif" /></em>
+									<em><input type="radio" name="rel" /><img src="../images/detail/stars3.gif" /></em>
+									<em><input type="radio" name="rel" /><img src="../images/detail/stars2.gif" /></em>
+									<em><input type="radio" name="rel" /><img src="../images/detail/stars1.gif" /></em>
+								</p>
+								<p><span>评价内容：</span><textarea name="textarel"></textarea></p>
+								<input type="button" id="btn-submit" />
+							</form>
+						</div>	
+					</div>
+
+					<!-- ============================尺码详情========================== -->
+					<div class="size" id="box2">
+						<table>
+							<tr>
+								<th>尺码</th>
+								<th>衣长</th>
+								<th>肩宽</th>
+								<th>胸围</th>
+								<th>袖长</th>
+								<th>领款</th>
+								<th>袖口围</th>
+								<th>下摆围</th>
+							</tr>
+							<tr>
+								<td>S</td>
+								<td>65</td>
+								<td>37</td>
+								<td>106</td>
+								<td>44</td>
+								<td>24.5</td>
+								<td>33</td>
+								<td>98</td>
+							</tr>
+							<tr class="f7">
+								<td>M</td>
+								<td>66</td>
+								<td>38</td>
+								<td>110</td>
+								<td>45</td>
+								<td>25</td>
+								<td>34</td>
+								<td>102</td>
+							</tr>
+							<tr>
+								<th>试穿人</th>
+								<th colspan="2">身高cm/体重kg</th>
+								<th>三围cm</th>
+								<th>试穿尺码</td>
+								<th colspan="3">试穿感受</th>
+							</tr>
+							<tr>
+								<td>ELEN</td>
+								<td colspan="2">165/48</td>
+								<td>80/72/83</td>
+								<td>M</td>
+								<td  colspan="3">上身时尚有范，面料厚实保暖。</td>
+							</tr>
+						</table>
+					</div>
+					<!-- =========================常见问题=============================== -->
+					<div class="faq" id="box3">
+						<span>支付方式</span>
+						<p>提供在线支付、网上银行、货到付款等多种支付方式，可满足您不同的支付需求。</p>
+						<h3>1.在线支付</h3>
+						<p>提供支付宝支付、网上银行两种在线支付方式，几乎涵盖所有大中型银行发行的银行卡，覆盖率达98%。选择在线支付，您的银行卡需要开通相应的网上银行业务。</p>
+						<p><img src="../images/detail/zhifu_list.png"></p>
+						<h3>2.货到付款</h3>
+						<p>货到付款是配送员送货上门，客户收单验货后，直接将货款交给配送员的一种结算方式。</p>
+						<h4>更多支付方式<a href="#">在线支付</a></h4>
+						<span>退换货政策</span>
+						<h4>更多售后服务问题请查看<a href="#">售后服务</a></h4>
+					</div>
+				</div>
+				
+				
+
+			</div>
+
+
+
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ===========================综合信息============================== -->
+	<div id="information">
+		<div>
+			<h2>新手上路</h2>
+			<ul>
+			<li><a href="">怎样下订单</a></li>
+			<li><a href="">会员等级制度</a></li>
+			<li><a href="">积分制度</a></li>
+			<li><a href="">优惠券制度</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于订购</h2>
+			<ul>
+			<li><a href="">网上支付</a></li>
+			<li><a href="">邮局汇款</a></li>
+			<li><a href="">银行汇款</a></li>
+			<li><a href="">货到付款</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于配送</h2>
+			<ul>
+			<li><a href="">配送时间</a></li>
+			<li><a href="">配送费用</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>帮助中心</h2>
+			<ul>
+			<li><a href="">找回密码</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">公告栏</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>售后服务</h2>
+			<ul>
+			<li><a href="">退换货政策</a></li>
+			<li><a href="">退换货申请</a></li>
+			<li><a href="">1:1留言答复</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于我们</h2>
+			<ul>
+			<li><a href="">公司简介</a></li>
+			<li><a href="">招聘英才</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>联系合作</h2>
+			<ul>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">友情链接</a></li>
+			<li><a href="">实体批发</a></li>
+		</ul>
+		</div>
+	</div>
+	<!-- ===================================分割线黑色的=========================-->
+	<div id="black">
+		
+	</div>
+	<!-- ======================================copy底部========================== -->
+	<div id="copy">
+		<p>&copy;2005-2016 YISHION以纯-官方网站 版权所有，并保留多有权利。</p>
+		<p>技术支持：<span>伍佰亿</span></p>
+		<img src="../images/copy/paidai.png" alt="" />
+	</div>
+</body>
+</body>
+</html>

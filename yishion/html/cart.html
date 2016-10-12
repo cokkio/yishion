@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/index.css" />
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/detail.css" />
+	<script src="../jquery/jquery.js"></script>
+	<script src="../jquery/cart.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+	<!-- nav-nav导航===============================top-nav导航============== -->
+	<div class="top-nav_wrap">
+		<div id="top-nav">
+			<!-- ===============左侧====================== -->
+			<div id="leftnav" class="left">
+				<ul>
+					<li><a href="../index.html" class="red">返回首页</a></li>
+					<li><a href="#">收藏本站</a></li>
+					<!-- =======================购物车================================ -->
+					<li><a href="#">查看购物车</a></li>
+					<li><a href="#">用户中心</a></li>
+					<li><a href="#">留言板</a></li>
+					<li><a href="#">会员俱乐部</a></li>
+				</ul>
+			</div>
+			<!-- ====================右侧=========================================== -->
+			<div id="rightnav" class="right">
+				<ul>
+					<li>您好，欢迎光临本店！</li>
+					<!--================= 点击进入登录页面=login============================ -->
+					<!-- <li><a href="login.html" class="red">登录</a></li> -->
+					<!--==================点击进入注册界面=register.html===========================-->
+					<!-- <li><a href="register.html">注册</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--=====================top-search搜索框========================================-->
+	<div id="top-search">
+		<div class="logoimg left">
+			<a href="#"><img src="../images/logo/logo.gif" alt="logo" /></a>
+		</div>
+		<!--================================搜索框 =============-->
+		<div id="searchbox" class="left">
+			<input type="text" class="w373 left" placeholder="针织衫" id="txt" />
+			<img src="../images/top-search/search_btn1.png" alt="搜索" />
+			<ul id="list-search">
+				<li>
+					<a href=""></a>
+				</li>
+			</ul>
+			<ul>
+				<li class="red">热门搜索：</li>
+				<li><a href="#">打底衫</a></li>
+				<li><a href="#">开衫</a></li>
+				<li><a href="#">衬衫</a></li>
+				<li><a href="#">连衣裙</a></li>
+				<li><a href="#">小娇女仔裤</a></li>
+				<li><a href="#">女鞋</a></li>
+				<li><a href="#">配饰</a></li>
+			</ul>
+		</div>
+		<!--=============== 购物车 ==============-->
+		<div id="cartbox" class="left">
+			<a href="cart.html" id="price-box">购物车<span class="red">0</span></a>
+		</div>
+	</div>
+	<!--=========================================== 真正的导航nav============================ -->
+	<div id="nav_wrap">
+		<div id="nav">
+			<ul id="nav-tab">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">时尚女装</a>
+					<ul class="hot-data">
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">裙子</a></li>
+						<li><a href="#">全智贤同款</a></li>
+						<li><a href="#">外套</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">线衫</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入时尚女装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">精品男装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">外套</a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">商务休闲</a></li>
+						<li><a href="#">FR3E系列</a></li>
+						<li><a href="#">韩庚推荐款</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<li><a href="#">夏装</a></li>
+						<li><a href="#">线衫</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">休闲鞋</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入精品男装首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">更多单品</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入更多单品首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">男童</a>
+					<ul class="hot-data w780">
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入男童首页>></a></h3>
+					</ul>
+				</li>
+				<li>
+					<a href="#">可爱童装</a>
+					<ul class="hot-data w780">
+						<li><a href="#">男童</a></li>
+						<li><a href="#">女童</a></li>
+						<li><a href="#">轻薄羽绒</a></li>
+						<li><a href="#">圣诞系列</a></li>
+						<li><a href="#">更多单品</a></li>
+						<li><a href="#">可爱童鞋</a></li>
+						<li class="w30"><a href="#" class="p0">热门活动</a></li>
+						<ul class="infor">
+							<li><a href="#">热卖TOP榜单</a></li>
+							<li><a href="#">秒杀专区</a></li>
+							<li><a href="#">秋装新品上新</a></li>
+						</ul>
+						<h3><a href="#">抢购活动</a></h3>
+						<h3><a href="../index.html">进入可爱童装首页>></a></h3>
+					</ul>
+						
+				</li>
+				<li>
+					<a href="#">折扣专区</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- =======================购物车部分================================================ -->
+	<div id="shopping-cart">
+		<p>LOCATIONG:首页>购物流程</p>
+		<img class="cart-title" src="../images/cart/cart_title_01.gif" />
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4">商品名称</th>
+					<th>属相</th>
+					<th>本店价</th>
+					<th>购买数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="chanpin">
+			<!--============ 拼字符串========== -->
+				<!-- <tr>
+					<td colspan="5"><img src="images/detail/cartimg.jpg" /><span>长袖线衣</span></td>
+					<td>￥199.00元</td>
+					<td>
+						<a href="#" class="plus"></a>
+						<em>1</em>
+						<a href="#" class="cut"></a>
+					</td>
+					<td class="cred">￥199.00元</td>
+					<td><a href="#">删除</a></td>
+				</tr>-->	
+			</tbody>
+			<tfoot>
+				<tr class="h15">
+					<td colspan="9"></td>
+				</tr>
+				<tr class="count">
+					<td colspan="9" class="btop">
+						<h2>购物金额小计：￥<span id="total-price">0.00</span>元</h2>
+						<img src="../images/cart/checkout.gif" class="settle-btn" />
+					</td>
+				</tr>
+			</tfoot>		
+		</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ===========================综合信息============================== -->
+	<div id="information">
+		<div>
+			<h2>新手上路</h2>
+			<ul>
+			<li><a href="">怎样下订单</a></li>
+			<li><a href="">会员等级制度</a></li>
+			<li><a href="">积分制度</a></li>
+			<li><a href="">优惠券制度</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于订购</h2>
+			<ul>
+			<li><a href="">网上支付</a></li>
+			<li><a href="">邮局汇款</a></li>
+			<li><a href="">银行汇款</a></li>
+			<li><a href="">货到付款</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于配送</h2>
+			<ul>
+			<li><a href="">配送时间</a></li>
+			<li><a href="">配送费用</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>帮助中心</h2>
+			<ul>
+			<li><a href="">找回密码</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">公告栏</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>售后服务</h2>
+			<ul>
+			<li><a href="">退换货政策</a></li>
+			<li><a href="">退换货申请</a></li>
+			<li><a href="">1:1留言答复</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>关于我们</h2>
+			<ul>
+			<li><a href="">公司简介</a></li>
+			<li><a href="">招聘英才</a></li>
+		</ul>
+		</div>
+		<div>
+			<h2>联系合作</h2>
+			<ul>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">友情链接</a></li>
+			<li><a href="">实体批发</a></li>
+		</ul>
+		</div>
+	</div>
+	<!-- ===================================分割线黑色的=========================-->
+	<div id="black">
+		
+	</div>
+	<!-- ======================================copy底部========================== -->
+	<div id="copy">
+		<p>&copy;2005-2016 YISHION以纯-官方网站 版权所有，并保留多有权利。</p>
+		<p>技术支持：<span>伍佰亿</span></p>
+		<img src="../images/copy/paidai.png" alt="" />
+	</div>
+
+
+
+	<div id="settlebox">	
+	</div>
+	<div id="settle">
+		<h3>结算<span>X</span></h3>	
+		<p>请您选择结算方式</p>
+		<p><input type="radio" name="rel"/><img src="../images/cart/zhifubao.jpg" /></p>
+		<p><input type="radio" name="rel"/><img src="../images/cart/weixin.jpg" /></p>
+		<p><input type="radio" name="rel"/><img src="../images/cart/zgyh.jpg" /></p>
+		<p><input type="radio" name="rel"/><img src="../images/cart/zgjh.jpg" /></p>
+		<p><input type="radio" name="rel"/><em>货到付款</em></p>
+		<p class="product-user"><!-- 用户<span class="produser"></span> --></p>
+		<p class="red3">结算金额为￥<span class="prodmoney"></span></p>
+		<a href="##" class="w200">结算</a>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* top头部 ===============================top头部 ==============*/
+.top{width: 100%;height:90px;}
+.top a{width:100%;height:90px;display:block;background:url("../images/top/top1.png") center top;}
+/* top-nav导航第一个 ======================================top-nav导航第一个===================*/
+.top-nav_wrap{width:100%;height:28px;border-bottom:1px solid #eeeeee;background:#f7f7f7;}
+#top-nav{width:1200px;height:28px;margin:0 auto;}
+/* =============================左侧 ====================================*/
+#leftnav{width:380px;height:28px;}
+#leftnav ul li{float:left;line-height:28px;}
+#leftnav ul li a{display:block;color:#565656;margin-right:13px;}
+
+/*========================== 右侧=================================== */
+#rightnav ul li{float:left;line-height:28px;margin-right:13px;}
+#rightnav ul li a{color:#565656;}
+/*==================================top-search搜索框 ================================*/
+#top-search{width:1200px;height: 110px;margin:0 auto;}
+.logoimg{width:355px;height:110px;margin-right:60px;}
+.logoimg a{display:block;margin-top:33px;width:355px;height:66px;}
+/* =============================搜索框============================*/
+#searchbox{width:440px;height:85px;margin-right:142px;padding-top:25px;}
+#searchbox .w373{width: 373px;height: 32px;border:0;border:1px solid #dedede;margin-right:10px;}
+
+
+
+#list-search {width: 370px;border: 3px solid #0f0;display: none;overflow:hidden;background:#eee;position:relative;z-index:999;}
+#list-search li {width: 300px;height: 30px;font-size: 14px;list-style: none;}
+#list-search li a {display: block;line-height: 30px;color: #000;font-family: "微软雅黑";text-decoration: none;padding-left:10px;}
+#list-search li a:hover {background: #f99;color: #fff;}
+
+
+
+
+
+
+#searchbox .w50{width: 50px;height: 32px;border:none;background:#c80a28;}
+#searchbox ul li{float:left;margin-right:6px;}
+#searchbox ul li a{color:#999999;}
+#cartbox{width:160px;height:85px;padding-top:25px;}
+#cartbox a{display:block;width: 160px;height: 35px;background:url("../images/top-search/cart.png") no-repeat left top;text-indent:65px;line-height:35px;color:#565656;}
+#cartbox a span{margin-left:8px;}
+/*===================================== 真正的导航nav =============================*/
+#nav_wrap{width:100%;height:35px;background:#c80a28;}
+#nav{width:1200px;height:35px;margin:0 auto;position:relative;}
+#nav-tab > li{float:left;line-height:35px;}
+#nav-tab > li > a{display:block;color:#fff;font-size:15px;padding:0 20px;}
+#nav-tab li .hot-data{position:absolute;left:0;top:35px;width:960px;background:#fff;border:1px solid #c80a28;display:none;z-index:9999;}
+#nav-tab li .w780{width:670px;}
+#nav-tab li .hot-data > li{height:320px;width:80px;border-right:1px dashed #ddd;padding:0 10px;float:left;}
+#nav-tab li .hot-data .w30{width:30px;border-right:0;letter-spacing:20px;}
+#nav-tab li .hot-data > li a{color:#c80a28;font-weight:bold;font-size:14px;line-height: 26px;padding-left:8px;}
+
+.infor li a{color:#444;font-size:12px;margin-left:50px;}
+
+#nav-tab li .hot-data h3{font-weight:normal;}
+#nav-tab li .hot-data h3 a{margin-left:20px;color:#c80a28;font-size:16px;line-height:40px;}
+
+/*========================= 轮播图 banner==================================================*/
+#bannerbig{width:100%;height:450px;overflow:hidden;position:relative;}
+#banner-img{height: 450px;}
+#banner-img li{float:left;width:100%;}
+#banner-img li a{display:block;width:100%;height: 450px;overflow: hidden;}
+#banner-nav{position:absolute;top:90%;left:40%;}
+#banner-nav a{display:inline-block;width:20px;height:20px;border-radius:100%;background:#888;cursor:pointer;margin-right:15px;}
+#bannerbig #banner-nav a:hover,#bannerbig #banner-nav a.cur{background:#c80a28;}
+#bannerbig .btnp{position:absolute;top:50%;width: 55px;height:64px;background:#eef2fc;color:#565656;font-size:45px;text-align:center;cursor:pointer;}
+#pre{left:32px;}
+#next{right:32px;}
+/* ===============================热销展品展示======================================== */
+#productlist{width:1200px;margin:10px auto 20px;overflow:hidden;}
+#productlist ul{width:1212px;}
+#productlist ul li{float:left;margin-right:12px;}
+
+#productlist ul li a img{display:block;width: 190px;height: 300px;}
+/* =======================女装专场ladylist========================================= */
+/* ================================================左侧列表项============ */
+#ladylist{width:1200px;margin:0 auto 10px;overflow:hidden;}
+#ladylist1{height:390px;}
+#ladytab{width:151px;height: 388px;border:1px solid #dcdcdc;margin-right:10px;}
+#ladytab li a{color:#353535;font-size:14px;display:block;height:46px;padding-top:18px;border-bottom:1px solid #dcdcdc;}
+#ladytab li a img{margin:-6px 15px 0 10px;}
+#ladytab li a span{display:block;color:#7d7d7d;font-size:12px;}
+/* ==========================右侧导航================================= */
+.ladylistright{height:390px;}
+.ladylistright h3{width:1037px;height:30px;background:#c80a29;margin-bottom:8px;}
+.ladylistright h3 span{line-height:30px;font-size:18px;color:#fff;padding-left:20px;}
+.ladylistright h3 ul li{float:left;height:15px;border-right:1px solid #fff;margin-top:9px;}
+.ladylistright h3 ul li a{display:block;color:#fff;padding:0 10px;cursor:pointer;}
+
+/*====================== 第二个轮播图============================= */
+.lady-scroll{width:785px;height: 352px;position:relative;overflow:hidden;}
+#ladyscroll li{width:785px;height:352px;}
+#ladyscroll li a{display:block;height:100%;}
+#lady-nav{position:absolute;top:90%;left:70%;}
+#lady-nav a{display:inline-block;width:25px;height:25px;background:#fff;color:#777777;text-align:center;margin-right:15px;line-height:25px;}
+#lady-nav a:hover ,#lady-nav a.cur{background:#fe0034;color:#fff;}
+/*=========================要写json数据的图片ladylist最右边的====================================*/
+#ladyrright{width:242px;height:352px;margin-left:8px;}
+#ladyrright li a img{display:block;}
+/* ============================女士专场服装展示ladylist2 要用json数据=================*/
+#ladylist2{width:1200px;margin-top:16px;overflow:hidden;}
+#ladylist2 ul{width:1210px;}
+#ladylist2 ul li{float:left;width:230px;height:290px;border:1px solid #dcdcdc;margin-right:10px;margin-bottom:6px;text-align:center;line-height:20px;}
+#ladylist2 ul li a img{display:block;width:100%;}
+#ladylist2 ul li p{color:#444444;}
+#ladylist2 ul li a p{color:#565656;}
+
+/*================================== 男装专场manlist========================= */
+
+#manlist{width:1200px;margin:0 auto 10px;overflow:hidden;}
+#manlist1{height:390px;}
+#mantab{width:151px;height: 388px;border:1px solid #dcdcdc;margin-right:10px;}
+#mantab li a{color:#353535;font-size:14px;display:block;height:46px;padding-top:18px;border-bottom:1px solid #dcdcdc;}
+#mantab li a img{margin:-18px 13px 0 12px;float:left;}
+#mantab li a span{display:block;color:#7d7d7d;font-size:12px;}
+/* ==========================右侧导航================================= */
+.manlistright{height:390px;}
+.manlistright h3{width:1037px;height:30px;background:#000;margin-bottom:8px;}
+.manlistright h3 span{line-height:30px;font-size:18px;color:#fff;padding-left:20px;}
+.manlistright h3 ul li{float:left;height:15px;border-right:1px solid #fff;margin-top:9px;}
+.manlistright h3 ul li a{display:block;color:#fff;padding:0 10px;cursor:pointer;}
+/*======================================= 没有轮播图的男装大图======================== */
+.manimg{overflow:hidden;}
+.manimg a{display:block;width:785px;height:352px;}
+/*======================要写json数据的图片manlist最右边的====================================*/
+#manrright{width:242px;height:352px;margin-left:8px;overflow:hidden;}
+#manrright ul{height:360px;}
+#manrright li{margin-bottom:10px;}
+#manrright li a img{display:block;}
+
+/* ============================男士专场服装展示manlist2 要用json数据=================*/
+#manlist2{width:1200px;margin-top:16px;overflow:hidden;}
+#manlist2 ul{width:1210px;}
+#manlist2 ul li{float:left;width:230px;height:290px;border:1px solid #dcdcdc;margin-right:10px;margin-bottom:6px;text-align:center;line-height:20px;}
+#manlist2 ul li a img{display:block;width:100%;}
+#manlist2 ul li p{color:#444444;}
+#manlist2 ul li a p{color:#565656;}
+
+/* ============================男士专场服装展示manlist2 要用json数据=================*/
+#manlist2{width:1200px;margin-top:16px;overflow:hidden;}
+#manlist2 ul{overflow:hidden;}
+#manlist2 ul li{float:left;width:290px;height:318px;border:1px solid #dcdcdc;margin-right:10px;margin-bottom:6px;text-align:center;line-height:24px;}
+#manlist2 ul li p a{color:#888888;}
+#manlist2 ul li p span{float:right;color:#444444;}
+/* ========================可爱童装childlist=================================== */
+#childlist{width:1200px;margin:0 auto 10px;overflow:hidden;}
+#childlist1{height:390px;}
+#childtab{width:151px;height: 388px;border:1px solid #dcdcdc;margin-right:10px;}
+#childtab li a{color:#353535;font-size:14px;display:block;height:46px;padding-top:18px;border-bottom:1px solid #dcdcdc;}
+#childtab li a img{margin:-18px 11px 0 7px;float:left;}
+#childtab li a span{display:block;color:#7d7d7d;font-size:12px;}
+
+/* ==========================右侧导航================================= */
+.childlistright{height:390px;}
+.childlistright h3{width:1037px;height:30px;background:#0799cc;margin-bottom:8px;}
+.childlistright h3 span{line-height:30px;font-size:18px;color:#fff;padding-left:20px;}
+.childlistright h3 ul li{float:left;height:15px;border-right:1px solid #fff;margin-top:9px;}
+.childlistright h3 ul li a{display:block;color:#fff;padding:0 10px;cursor:pointer;}
+/*======================================= 没有轮播图的童装大图======================== */
+.childimg{overflow:hidden;}
+.childimg a{display:block;width:785px;height:352px;}
+/*=========================要写json数据的图片childlist最右边的====================================*/
+#childrright{width:242px;height:352px;margin-left:8px;}
+#childrright li a img{display:block;}
+/* ============================童装专场服装展示childlist2 要用json数据=================*/
+#childlist2{width:1200px;margin-top:16px;overflow:hidden;}
+#childlist2 ul{width:1210px;}
+#childlist2 ul li{float:left;width:232px;margin-right:10px;margin-bottom:6px;text-align:center;line-height:20px;}
+#childlist2 ul li a img{display:block;width:100%;}
+#childlist2 ul li p{width:230px;height:34px;line-height:34px;background:#0199ec;color:#fff;}
+#childlist2 ul li p .sl em{text-decoration:line-through;}
+#childlist2 ul li p .sr strong{color:#fffd02;font-size:16px;}
+
+/*====================以纯标志分割童装专场和陪衬========================= */
+#yishion{width:1200px;height:90px;margin:0 auto 10px;}
+/*============================= secondary配衬====================== */
+#secondary{width:1200px;margin:0 auto 10px;overflow:hidden;}
+#secondary1{height:390px;}
+#secondarytab{width:151px;height: 388px;border:1px solid #dcdcdc;margin-right:10px;}
+#secondarytab li a{color:#353535;font-size:14px;display:block;height:46px;padding-top:18px;border-bottom:1px solid #dcdcdc;}
+#secondarytab li a img{margin:-18px 11px 0 15px;float:left;}
+#secondarytab li a span{display:block;color:#7d7d7d;font-size:12px;}
+
+/* ==========================右侧导航================================= */
+.secondaryright{height:390px;}
+.secondaryright h3{width:1037px;height:30px;background:#dccda2;margin-bottom:8px;}
+.secondaryright h3 span{line-height:30px;font-size:18px;color:#fff;padding-left:20px;}
+.secondaryright h3 ul li{float:left;height:15px;border-right:1px solid #fff;margin-top:9px;}
+.secondaryright h3 ul li a{display:block;color:#fff;padding:0 10px;cursor:pointer;}
+
+/*======================================= 没有轮播图的配衬大图======================== */
+.secondaryimg{overflow:hidden;}
+.secondaryimg a{display:block;width:785px;height:352px;}
+/*=========================要写json数据的图片secondary最右边的====================================*/
+#secondaryrright{width:242px;height:352px;margin-left:8px;}
+#secondaryrright li a img{display:block;}
+
+/* ============================女士专场服装展示ladylist2 要用json数据=================*/
+#secondary2{width:1200px;margin-top:16px;overflow:hidden;}
+#secondary2 ul{width:1210px;}
+#secondary2 ul li{float:left;width:230px;height:290px;border:1px solid #dcdcdc;margin-right:10px;margin-bottom:6px;text-align:center;line-height:20px;}
+#secondary2 ul li a img{display:block;width:100%;}
+#secondary2 ul li p{color:#444444;}
+#secondary2 ul li a p{color:#565656;}
+/* ================新闻中心====================== */
+
+#news{width:1200px;margin:0 auto;overflow:hidden;}
+#newsleft{width:696px;overflow:hidden;}
+#newsleft h3{line-height:30px;font-size:16px;background:#e7e7e7;padding-left:5px;font-weight: normal;}
+#newsleft a{float:left;margin-top:5px;margin-right:2px;}
+#newsleft a img{display:block;}
+#newsright{width:488px;}
+#newsright h3{line-height:30px;font-size:16px;background:#e7e7e7;padding-left:5px;font-weight: normal;}
+
+#newslist li{float:left;margin-right:2px;margin-top:5px;}
+#newslist li a img{display:block;}
+/*========================== 综合信息 ============================================*/
+#information{width:1200px;height:165px;background:#f1f1f1;margin:20px auto 4px;}
+#information div{display:inline-block;width:165px;vertical-align:top;padding:20px 0;text-align:center;}
+#information div h2{font-size:20px;color:#393939; margin-bottom:12px;}
+#information div li a{color:#7b7b7b;line-height:22px;}
+
+/* =============================黑色的分割线=========================================== */
+#black{width:1200px;height:36px;margin:0 auto;background:#393939;}
+/* =============================copy底部======================== */
+#copy{width:1200px;height:124px;margin:0 auto;}
+#copy p{text-align:center;line-height:30px;color:#000;}
+#copy p span{color:#565656;}
+
+/* 返回顶部按钮 */
+#returntop a{display:block;width:66px;height:83px;position:fixed;cursor:pointer;right:10px;bottom:80px;border:1px solid #ccc;line-height:83px;text-align:center;background:#fff;opacity:0.7;}

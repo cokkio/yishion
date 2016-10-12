@@ -1,0 +1,259 @@
+
+
+
+/* =================================================================================登录界面的css样式 ==============================================================*/
+
+
+#loginbox{width:1200px;height:452px;margin:0 auto;}
+#loginbox .heading{line-height:30px;color:#000;width:1200px;height:30px;text-align:right;}
+#loginbox .heading a{color:#000;}
+#loginbox h1{width:1200px;height:110px;text-align:center;font-size:32px;line-height:110px;font-weight:normal;}
+#loginbox h1 span{color:#b2b2b2;font-size:24px;font-weight:normal;}
+#login{width:798px;height:296px;border:1px solid #eee;margin:18px 0 0 200px;}
+#loginleft{width:372px;height:236px;padding-top:60px;}
+#loginleft  .massige input{border:0;width:200px;height:20px;border:1px solid #cdcdcd;background:#f3f3f3;margin-bottom:10px;}
+#loginleft .massige span{display:inline-block;width:80px;text-align:right;margin-right:10px;}
+#loginleft button{border:0;width:201px;height: 56px;background:url("../images/login/login.jpg")repeat;margin:10px 0 10px 90px;font-size:16px;color:#ffdd00;text-align:left;padding-left:20px;line-height: 56px;font-weight:bolder;}
+#loginleft button span{display:inline-block;width: 88px;height: 40px;color:#fff;border-bottom:1px solid #fff;font-size:14px;text-align:right;margin-left:25px;}
+#loginleft .w90 input{margin-left:90px;}
+#loginright{margin-top:38px;}
+#loginright img{display:block;}
+
+
+
+
+
+
+
+
+
+
+/* =================================================================注册界面的css样式============================================= */
+#registerbox{width:1200px;height:614px;margin:0 auto;}
+#registerbox .heading{line-height:30px;color:#000;width:1200px;height:30px;text-align:right;}
+#register{width:790px;height:546px;border:4px solid #eee;margin-left:195px;margin-top:18px;}
+#register h1{font-size:22px;color:#b4b2b3;text-align:center;margin:67px 0 34px 0;}
+#register h1 span{font-size:22px;color:#343434;}
+#register p strong{color:#ff0000;margin-left:5px;}
+#register p em{color:#00f;}
+#register p{margin-bottom:10px;}
+#register .strength i{display:inline-block;width:50px;border-bottom:3px solid #ddd;text-align:center;}
+#register p input{width: 200px;height: 20px;border:0;border:1px solid #dcdcdc;background:#f3f3f3;}
+#register p span{display:inline-block;width:264px;text-align:right;margin-right:10px;}
+#register .w270{margin-left:270px;}
+#register .w270 input{width:13px;height: 13px;}
+#register .w270 a{color:#000;}
+#register button{border:0;width:201px;height: 56px;background:url("../images/login/login.jpg")repeat;margin-left:270px;font-size:16px;color:#ffdd00;text-align:left;padding-left:20px;line-height: 56px;font-weight:bolder;}
+#register button b{display:inline-block;width: 88px;height: 40px;color:#fff;border-bottom:1px solid #fff;font-size:14px;text-align:right;margin-left:25px;}
+
+
+
+
+
+/*====================================== 详情页样式 ===============*/
+#detailbox{width: 1200px;margin:0 auto;overflow:hidden;}
+#detailbox .h66{color:#000;line-height:66px;margin-left:7px;}
+#detailbox .h66 a{color:#000;}
+/*============================================== 左边部分 ======*/
+#detailbox-left{width:190px;overflow:hidden;}
+#detailbox-left h3{color:#d95454;font-size:18px;font-weight:normal;line-height:30px;margin-left:10px;}
+#detailbox-left ul{margin-left:28px;}
+#detailbox-left ul li{margin-top:15px;background:url("../images/detail/circle.jpg") no-repeat left center;}
+#detailbox-left ul li a{color:#666;margin-left:13px;}
+/* ===========================================右边部分================== */
+#detailbox-right{width:1000px;overflow:hidden;}
+
+
+
+
+#detail{width:998px;height:628px;border:1px solid #ededed;}
+/* =========================左边部分================================== */
+#detail-left{width:481px;height:628px;border-right:1px solid #ededed;}
+/* ================================================================================================================放大镜效果======================================== */
+#glass{width:460px;height:575px;position:relative;}
+.glass-main{position:relative;width:316px;height:480px;margin-left:80px;}
+.glass-main img{display:block;width:316px;height:480px;}
+#imgshow{display:none;position:absolute;top:0;left:0;width:200px;height:200px;z-index:1;
+cursor: move;border: 1px solid #aaa;background: #fede4f 50% top no-repeat;opacity: 0.5;filter: alpha(opacity=50);}
+#glass-show{display: none;position:absolute;top:0;
+left: 482px;width:316px;height: 480px;border: 1px solid #eee;border-top: 0;overflow:hidden;}
+#glass-show img{position:absolute;top:0;left:0;width:632px;height:960px;z-index:999;}
+
+
+
+
+
+
+
+
+
+/* ============================放大镜结束=============================== */
+.like-share{border-top:1px dashed #dedede;margin-left:10px;width:460px;}
+.mt15{margin-top:15px;}
+.like-share span{float:left;line-height:28px;}
+
+
+
+/*================================= 右边部分 ==========================*/
+#detail-right{width:478px;margin-right:15px;}
+#detail-right .news{width:485px;height:179px;border-bottom:1px solid #ededed;}
+#detail-right .news h4{line-height:32px;font-size:14px;}
+#detail-right .news h1{margin-top:15px;color:#777;font-weight:normal;}
+#detail-right .news h1 b{color:#c80a28;}
+#detail-right .news .tt1 span{margin-left:30px;}
+#detail-right .news .tt1 em{color:#666;text-decoration:line-through;font-weight:bolder;}
+#detail-right .news .tt2{position:relative;}
+#detail-right .news .tt2 .sell{font-size:17px;margin-right:17px;}
+#detail-right .news .tt2 .sell em{color:#c80a28;font-size:17px;}
+#detail-right .news .tt2 i{display:inline-block;width:38px;height:16px;background:#74c8b1;color:#fff;text-align:center;margin-right:20px;}
+#detail-right .news .tt2 a{color:#777;text-decoration:none;}
+#detail-right .news .tt2 a img{margin-left:12px;}
+#vip{width:460px;height:auto;background:#fafafa;color:#999;border:1px solid #eee;z-index:9999;padding:5px 0;line-height:20px;display:none;position:absolute;padding-left:10px;}
+/* 购买或者加入购物车 */
+#purchase{width:485px;border-bottom:1px solid #ededed;}
+#purchase p{color:#9a9a9a;margin:20px 0 30px 0;}
+#purchase p b{margin-right:5px;font-weight:normal;}
+#purchase p a{display:inline-block;color:#9a9a9a;height:14px;width:14px;border:1px solid #9a9a9a;text-align:center;line-height:14px;margin-right:6px;font-size:14px;}
+#purchase p em{display:inline-block;width: 70px;height: 26px;border:1px solid #ddd;text-align:center;line-height:26px;margin-right:6px;}
+#purchase .detail-buy{display:inline-block;width:160px;height:43px;background:url("../images/detail/detail_buy.png") no-repeat;margin-right:12px;margin-bottom:15px;}
+#purchase #addcart{display:inline-block;width:160px;height:43px;background:url("../images/detail/detail_addcart.png") no-repeat;margin-bottom:15px;}
+
+
+#more a{color:#565656;display:inline-block;height:20px;margin-top:15px;margin-right:20px;position:relative; top: -5px}
+#more .red1{color:#c80a28;margin-left:60px;top: 0;}
+#more .red1 span{margin-right:3px;}
+#more a span{float:left;}
+#more a span .phone1{display:block;z-index:9;position:relative;display:none;}
+#more a .dingwei{position:absolute;top:-10px;}
+#more .code{width:20px;height:20px;}
+
+
+/* ==========================选项卡=========================================================================选项卡========================================================================选项卡============ */
+#tab{width:1000px;overflow:hidden;margin-top:20px;}
+#tab1{width:998px;height:38px;border:1px solid #ddd;background:#f5f3f0;}
+#tab1 ul{width:998px;height:34px;border-bottom:1px solid #ddd;background:#fff;}
+#tab1 ul li{float:left;height:32px;}
+#tab1 ul li a{display:block;color:#888;font-weight:bolder;padding:0 40px;border-right:1px solid #ededed;height:28px;margin-top:2px;line-height:28px;}
+#tab1 ul .cur{background:#f5f3f0;border-top:3px solid #c80a28;}
+/*============= 商品详情=========== */
+.proinfo{width:1000px;overflow:hidden;}
+.proinfo p{margin:10px 0 28px 124px;width:750px;height:50px;border:1px solid #e6e6e6;background:#f6f6f6;line-height:50px;color:#666;}
+.proinfo p span{margin:0 180px 0 20px;}
+.proinfo h5{font-size:18px;font-weight:normal;}
+.proinfo table{font-size:17px;text-align:center;}
+.proinfo table td,.proinfo table th{border:1px solid #000;height:37px;width:94px; vertical-align: middle;font-weight: normal}
+.proinfo h6{background:url("../images/detail/suggest.png") no-repeat left top;font-weight:normal;margin:50px 0 100px 0;padding-left:20px;}
+/* =====================商品评价======================= */
+.assessbox{width:1000px; display:none;}
+#user-assess{border-bottom:1px solid #ddd;}
+#user-assess ul li{line-height:27px;}
+
+.assessbox .m15{margin:15px 0 15px 780px;width:1000px;}
+.assessbox .m15 a{display:inline-block;width:55px;height:27px;color:#000;border:1px solid #ddd;background:#f9f9f9;line-height:27px;text-align:center;margin-left:25px;}
+#assess{border:1px solid #ddd;}
+#assess p{margin-top:15px;}
+#assess p span{display:inline-block;width:70px;text-align:right;float:left;}
+#assess p .e-mail{width:240px;height:30px;border:0;border:1px solid #ccc;}
+#assess p textarea{width:620px;height:50px;border:0;border:1px solid #ccc;}
+#assess #btn-submit{background:url("../images/detail/btn-submit.gif") no-repeat;width:61px;height:21px;border:0;margin:10px 0 15px 75px;}
+/* ===================尺码详情============= */
+.size{margin:20px 0 245px 127px;display:none;}
+.size table{border:1px solid #e6e6e6;color:#5c5c5c;}
+.size table td,.size table th{width:93px;height:28px;text-align:center;line-height:38px;}
+.size table .f7{background:#f7f7f7;}
+.size table th{background:#000;color:#fff;}
+/* =====================常见问题================ */
+.faq{width:988px;border:1px solid #dddddd;border-top:0;padding:10px 0 0 10px;display:none;}
+.faq span{display:block;width:978px;height:25px;background:#ddd;line-height:25px;}
+.faq p{margin-top:18px;}
+.faq h3{margin-top:18px;}
+.faq h4{line-height:38px;}
+.faq h4 a{color:#c80a28;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================================================================================================================================================================================== 购物车部分的样式================================================================================================================================================================================== */
+#shopping-cart{width:1200px;margin:0 auto;}
+#shopping-cart p{margin:14px 0 28px 1012px;}
+#shopping-cart .cart-title{display:block;margin:0 0 13px 70px;}
+#shopping-cart table{width:1197px;border:1px solid #e6e4e3;}
+#shopping-cart table th{background:#fafafa;line-height:33px;border-bottom:1px solid #e6e4e3;color:#979693;font-weight:normal;}
+#shopping-cart tfoot .h15{border-bottom:1px solid #e6e4e3;height:15px;}
+#shopping-cart .count h2{font-size:18px;color:#e94b48;text-align:right;margin:20px 10px 10px 0;}
+#shopping-cart .count h2 span{font-size:18px;}
+#shopping-cart .count img{float:right;margin:0 10px 10px 0;}
+#shopping-cart tbody tr td{padding-top:15px;line-height:112px;}
+#shopping-cart tbody td img{border:1px solid #ccc;width:110px;height:110px;float:left;margin: 0 15px 0 13px;}
+#shopping-cart tbody em{display:inline-block;width:35px;height:17px;border:1px solid #ccc;text-align:center;line-height:17px; margin:0 5px;}
+#shopping-cart tbody .plus{display:inline-block;width:13px;height:13px;background:url("../images/detail/ico_b.gif") no-repeat;}
+#shopping-cart tbody .cut{display:inline-block;width:13px;height:13px;background:url("../images/detail/ico_a.gif") no-repeat;}
+#shopping-cart tbody .cred{color:#d00;font-weight:bolder;}
+#shopping-cart tbody a{color:#f00;}
+/* ===============================================================结算页============================================== */
+html,body{width:100%;height:100%;}
+#settlebox{width:100%;height:100%;position:fixed;top:0;left:0;background:#000;opacity:0.5;filter:alpha(opacity:50);display:none;}
+#settle{width:600px;height:500px;position:fixed;top:25%;left:25%;background:#fff;display:none;}
+#settle h3{height:38px;line-height:38px;background:#ac0b24;
+font-size:18px;padding-left:5px;color:#fff;}
+#settle h3 span{float:right;font-size:18px;margin-right:5px;cursor:pointer;}
+#settle p{margin-top:10px;font-size:18px;margin-left:10px;}
+#settle p img{display:inline-block;width:125px;height:32px;}
+#settle p input{float:left;margin-top:10px;}
+#settle p em{display:inline-block;width:123px;height:30px;border:1px solid #ddd;line-height:30px;text-align:center;font-size:18px;}
+#settle .product-user span{font-size:18px;color:#ff7f1c;}
+#settle .product-user span a{font-size:16px;}
+#settle .red3{color:#e71313;font-weight:bolder;font-size:20px;}
+#settle .red3 .prodmoney{font-size:20px;}
+#settle .w200{display:block;width:180px;height:50px;background:#ff7f1c;color:#fff;font-size:25px;line-height:50px;text-align:center;float:right;margin-right:15px;}
+
+
+
+
+/* ===============================================================================================================================================================================================================================列表页样式信息============================================================================================================================================================================================================== */
+#list-box{width:1200px;margin:0 auto;overflow:hidden;}
+#list-left{width:220px;}
+#list-left p{background:#000;color:#fff;width:220px;height:30px;line-height:30px;font-size:14px;}
+#list-left .tab11{width:195px;height:400px;background:#f9f9f9;margin:5px 0 10px;}
+.tab11>li{cursor:pointer;}
+.tab11>li>a{display:block;background:#ddd;line-height:32px;font-size:14px;font-weight:bolder;position:relative;padding-left:10px;border:1px solid #ededed;}
+.tab11 span{float:right;color:#fff;font-size:20px;font-weight:bolder;margin-right:5px;}
+.tab11>li>ul{display:none;}
+.tab11>li>ul>li>a{display:block;margin-left:10px;line-height:30px;height:30px;}
+
+/*================================================================== 右边部分============================================================ */
+#list-right{width:955px;margin-top:10px;}
+#list-right h2{font-weight:normal;width:945px;height:35px;background:#f9f9f9;line-height:35px;padding-left:10px;}
+#list-right h2 p{display:inline-block;float:right;margin-right:10px;}
+#list-right h2 p a{display:inline-block;width:56px;height:24px;border:1px solid #ddd;color:#000;line-height:24px;text-align:center;}
+#prodlist li{float:left;width:280px;text-align:left;margin:20px 10px 0 0;}
+#prodlist li a{color:#000;line-height:32px;}
+#prodlist li a img{display:block;width:200px;height:280px;margin-left:30px;}
+#prodlist li span{color:#7b7b7b;}
+#prodlist li span i{text-decoration:line-through;}
+#prodlist li span em{margin-left:40px;color:#f00;font-size:14px;}
+#prodlist li span em b{font-size:14px;}
+
+
+
+
+
+/* ============================================================================================================================================搜索不到信息页面============ */
+#seek-none{width:600px;height:600px;margin:20% auto;}
+#seek-none h1{font-size:50px;margin-bottom:20px;}
+#seek-none a{font-size:25px;color:#999;margin-right:10px;}
+
+
+
+
+
+
+

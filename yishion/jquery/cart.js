@@ -183,10 +183,31 @@ $(function($)
 	if($.cookie("UserName") != undefined)
 	{
 		 $("<span class='produser'>用户："+ $.cookie("UserName") +"</span>").appendTo(".product-user");
+		 $(".w200").click(function()
+		{
+			var relCheck = false;
+			$("#settle").find("input").each(function()
+			{
+				if($("#settle").find("input:checked").val() == "on")
+				{
+					relCheck = true;
+				}
+			});
+			if (!relCheck) 
+			{
+				alert("请您选择付款方式。")
+			}
+			else
+			{
+				alert("您的订单已提交。");
+			}	
+				
+		})
 	}
 	else
 	{
 		$("<span class='produser'>您还未登录 <a href='login.html'>请登录,</a><a href='register.html'>或注册</a></span>").appendTo(".product-user");
+
 	}
 
 
@@ -194,26 +215,6 @@ $(function($)
 	{
 		$("#settlebox").css("display","none");
 		$("#settle").css("display","none");
-	})
-	$(".w200").click(function()
-	{
-		var relCheck = false;
-		$("#settle").find("input").each(function()
-		{
-			if($("#settle").find("input:checked").val() == "on")
-			{
-				relCheck = true;
-			}
-		});
-		if (!relCheck) 
-		{
-			alert("请您选择付款方式。")
-		}
-		else
-		{
-			alert("您的订单已提交。");
-		}	
-			
 	})
 
 

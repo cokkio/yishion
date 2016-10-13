@@ -5,16 +5,40 @@ $(function($)
 	// 用户名验证==================用户名验证
 	$("#username").blur(function()
 	{
-		var re1=/^[0-9a-zA-Z]\w{3,15}/;
-		if(re1.test($(this).val()))
+		if($.cookie("username") != undefined)
 		{
-			$(this).siblings("strong").html("*可以注册");
-			return flag1 = true;
+			if($(this).val() == $.cookie("username"))
+			{
+				$(this).siblings("strong").html("*用户名已经存在，请重新注册。");
+			}
+			else
+			{
+						var re1=/^[0-9a-zA-Z]\w{3,15}/;
+				if(re1.test($(this).val()))
+				{
+					$(this).siblings("strong").html("*可以注册");
+					return flag1 = true;
+				}
+				else
+				{
+					$(this).siblings("strong").html(" *用户名长度不能少于 3 个字符。")
+					return flag1 = false;
+				}
+			}
 		}
 		else
 		{
-			$(this).siblings("strong").html(" *用户名长度不能少于 3 个字符。")
-			return flag1 = false;
+				var re1=/^[0-9a-zA-Z]\w{3,15}/;
+			if(re1.test($(this).val()))
+			{
+				$(this).siblings("strong").html("*可以注册");
+				return flag1 = true;
+			}
+			else
+			{
+				$(this).siblings("strong").html(" *用户名长度不能少于 3 个字符。")
+				return flag1 = false;
+			}
 		}
 	})
 	$("#username").focus(function()
